@@ -328,7 +328,7 @@ minetest.register_entity("vehicles:assaultsuit", {
 	stepheight = 1.5,
 	hp_max = 200,
 	physical = true,
-	collisionbox = {-0.8, 0, -0.8, 0.8, 3, 0.8},
+	collisionbox = {-0.8, 0, -0.8, 0.8, 200, 0.8},
 	on_rightclick = function(self, clicker)
 		if self.driver and clicker == self.driver then
 			vehicles.object_detach(self, clicker, {x=1, y=0, z=1})
